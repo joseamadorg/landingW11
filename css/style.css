@@ -1,0 +1,1558 @@
+@charset "UTF-8";
+/* CSS Document */
+
+:root {
+    --blue: #0078d7;
+    --indigo: rgb(0,32,80,1);
+    --purple: #8661c5;
+    --pink: #f70086;
+    --red: #ff0000;
+    --orange: #d83b01;
+    --yellow: #ffb900;
+    --green: #107c10;
+    --teal: #008575;
+    --cyan: #50e6ff;
+    --white: #fff;
+    --gray: #737373;
+    --gray-dark: #505050;
+    --primary: #0078d7;
+    --secondary: #dddddd;
+    --success: #107c10;
+    --info: #0078d7;
+    --warning: #ffb900;
+    --danger: #6b2929;
+    --light: #f7f7f7;
+    --dark: #2f2f2f;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Segoe UI",Roboto;
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+html {
+	font-size: 15px
+}
+
+@media (min-width:576px) {
+	html {
+		font-size: 17px
+	}
+}
+
+@media (min-width:768px) {
+	html {
+		font-size: 19px
+	}
+}
+
+
+/*fonts*/
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: local('Segoe UI'), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("ttf");
+	font-weight: 400
+}
+
+@font-face {
+	font-family: 'Segoe UI Light';
+	src: local('Segoe UI Light'), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.ttf) format("ttf");
+	font-weight: 100
+}
+
+@font-face {
+	font-family: 'Segoe UI Semilight';
+	src: local('Segoe UI Semilight'), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.ttf) format("ttf");
+	font-weight: 200
+}
+
+@font-face {
+	font-family: 'Segoe UI Semibold';
+	src: local('Segoe UI Semibold'), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semibold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semibold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semibold/latest.ttf) format("ttf");
+	font-weight: 600
+}
+
+@font-face {
+	font-family: 'Segoe UI Bold';
+	src: local('Segoe UI Bold'), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Bold/latest.woff2) format("woff2"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Bold/latest.woff) format("woff"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Bold/latest.ttf) format("ttf");
+	font-weight: 600
+}
+
+body {
+	font-family: Segoe UI, SegoeUI;
+	color: #2f2f2f;
+	min-width: 320px
+}
+
+.knockout {
+	color: #fff!important
+}
+
+a,
+h1,
+th {
+	line-height: 1.1
+}
+
+.cta,
+.cta-dark,
+.cta-light,
+h1,
+
+
+h5,
+th {
+	letter-spacing: -.03rem
+}
+
+h3,
+h4{
+    letter-spacing: -.02rem
+}
+
+a,
+h1,
+h3,
+h5,
+th,
+strong {
+	font-family: 'Segoe UI Semibold', sans-serif;
+	font-weight: 600
+}
+
+h1 {
+	font-size: 1.618rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 1.618rem;
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.15rem
+}
+
+h4 {
+	font-size: 1rem;
+    line-height: 1.5
+}
+
+.prepare-headline{
+    color: #0078d7
+}
+
+
+.legal {
+	font-size: .5rem!important;
+}
+
+a,
+a:active,
+a:hover {
+	text-decoration: none!important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0078d7;
+    border-color: #0078d7;
+    border-radius: 0!important;
+   /* max-width: 10rem*/
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0078D7;
+    border: #0078d7 solid 1px;
+}
+
+.btn-primary-outline {
+    color: #fff;
+    background-color: transparent;
+    border: #fff solid 2px;
+    border-radius: 0!important;
+    max-width: 10rem
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: inherit
+}
+
+
+/* spacing */
+
+.container{
+    max-width: 1024px!important
+}
+
+.accordion button{
+    margin:0!important;
+    font-family: 'Segoe UI Semibold'
+}
+@media screen and (min-width:1200px){
+  div.pillar:first-of-type, div.device-column:first-of-type{
+  padding-left: 0!important;
+  max-width:32%;
+  }
+  div.pillar:last-of-type, div.device-column:last-of-type{
+  padding-right: 0!important;
+  max-width:32%;
+  }
+}
+/*** try deleting these if padding is acting weird ***/
+.px-4{
+padding-left:2.2rem!important;
+padding-right:2.2rem!important
+}
+.py-4{
+padding-top:2.2rem!important;
+padding-bottom:2.2rem!important
+}
+/*********/
+
+hr {
+	color: rgba(242, 242, 242, 1);
+	width: 90%;
+	max-width: 1415px
+}
+
+.mw-1440 {
+	max-width: 1440px!important
+}
+
+.mw-lg-50,
+.mw-md-50,
+.mw-sm-50,
+.mw-md-60{
+	max-width: 100%
+}
+
+@media screen and (min-width:576px) {
+	.mw-sm-50 {
+		max-width: 50%
+	}
+}
+
+@media screen and (min-width:768px) {
+	.mw-md-50 {
+		max-width: 50%
+	}
+}
+
+@media screen and (min-width:992px) {
+	.mw-lg-50 {
+		max-width: 50%
+	}
+    .mw-lg-60{
+        max-width: 60%
+    }
+}
+
+.w-md-50 {
+	width: 100%;
+}
+
+@media screen and (min-width:768px) {
+	.w-md-50 {
+		width: 50%;
+	}
+}
+
+.msfooter {
+    background-color: #f2f2f2!important;
+    min-height: 7rem
+}
+
+.table td,
+.table th {
+	border-top: none!important;
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem
+}
+
+.table th {
+	padding-top: 1.65rem
+}
+
+td>ul {
+	padding-inline-start: 1rem
+}
+
+p:last-of-type{
+    margin-bottom:0!important
+}
+
+.btn{
+    margin-top: 1em
+}
+
+.blade{
+    margin-bottom: 3rem
+}
+
+.card{
+        border-radius: 0!important
+}
+
+/*.pillar{
+    margin-bottom: 3rem
+}
+
+.pillar:last-child{
+    margin-bottom: 0
+}
+
+@media screen and (min-width:768px){
+.pillar{
+    margin-bottom: 0
+}
+}
+
+@media screen and (min-width:768px) and (max-width: 992px){
+.pillar:nth-child(1){
+    margin-bottom: 3rem
+}
+}
+*/
+
+div.col-12.col-md-6.col-lg-4:nth-last-of-type(1) > .card, div.col-12.col-md-6:nth-last-of-type(1) > .card{
+    margin-bottom: 0!important
+}
+
+@media screen and (min-width:768px){
+
+div.col-12.col-md-6.col-lg-4:nth-last-of-type(3) > .card{
+    margin-bottom: 0!important
+}
+
+div.col-12.col-md-6.col-lg-4:nth-last-of-type(2) > .card,div.col-12.col-md-6:nth-last-of-type(2) > .card {
+    margin-bottom: 0!important
+}
+
+}
+
+/* logos */
+
+.surfacelogo-light {
+	background-image: url(../images/MSSurface_logo_light.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 11.7rem
+}
+
+.surfacelogo-dark {
+	background-image: url(../images/MSSurface_logo_dark.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 11.7rem
+}
+
+.windowslogo-dark {
+	background-image: url(../images/Windows_logo_dark.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 6.815rem
+}
+
+.windowslogo-light {
+	background-image: url(../images/Windows_logo_light.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 6.815rem;
+}
+
+.windowsintellogo-dark {
+	background-image: url(../../images/Win-Intel_Logo-lockup_blue.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 11.5rem;
+    height:2.15rem
+}
+
+.windowsintellogo-light {
+	background-image: url(../../images/Win-Intel_Logo-lockup_white.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 11.5rem;
+    height:2.15rem
+}
+
+.win-amd-logo-dark {
+	background-image: url(../../images/AMD_Windows_Logo_dk-gray.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 13.5rem;
+    height:1.35rem
+}
+
+.win-amd-logo-light {
+	background-image: url(../../images/Win-Intel_Logo-lockup_white.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 11.5rem;
+    height:2.15rem
+}
+
+.microsoftlogo-light {
+	background-image: url(../../images/MSFT_logo_light.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 7.043rem
+}
+
+.microsoftlogo-dark {
+	background-image: url(../../images/MSFT_logo_dark.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 7.043rem
+}
+
+/* header */
+
+.headermain {
+	height: 600px;
+	background-image: url(../../images/header_sm.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center
+}
+
+@media screen and (min-width:576px) {
+	.headermain {
+		background-image: url(../../images/header_md.jpg);
+		height: 500px;
+		background-position: bottom center
+	}
+}
+
+@media screen and (min-width:992px) {
+	.headermain {
+		background-image: url(../../images/header_xl.jpg);
+		height: 500px;
+		background-position: bottom center
+	}
+}
+
+/* featured image */
+
+.featuredimage {
+	height: 600px;
+	background-image: url(../../images/featured_sm.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center
+}
+
+@media screen and (min-width:576px) {
+	.featuredimage {
+		background-image: url(../../images/featured_md.jpg);
+		height: 500px;
+		background-position: bottom center
+	}
+}
+
+@media screen and (min-width:992px) {
+	.featuredimage {
+		background-image: url(../../images/featured_xl.jpg);
+		height: 500px;
+		background-position: bottom center
+	}
+}
+
+/* carousels */
+
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	transition-property: opacity
+}
+
+.carousel-fade .carousel-inner .active {
+	opacity: 1
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2
+}
+
+@media screen and (min-width:576px) {
+	.carousel-control-next.selector {
+		right: 3%
+	}
+	.carousel-control-prev.selector {
+		left: 3%
+	}
+}
+
+.carousel-indicators {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel-indicators li {
+	display: inline-block;
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	border: 1px #000 solid!important;
+	border-radius: 5px;
+	opacity: 1!important;
+	margin-left: 10px
+}
+.carousel-indicators  li.active{
+	background-color: #000!important
+}
+
+
+
+
+.carousel-control-next-icon {
+	background-image: url(../images/carousel-arrows.png);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-position: -34px 0;
+	background-size: 68px 52px;
+	width: 34px;
+	height: 52px;
+	outline: 0
+}
+
+.carousel-control-prev-icon {
+	background-image: url(../images/carousel-arrows.png);
+	position: absolute;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -52%);
+	background-position: 0 0;
+	background-size: 68px 52px;
+	width: 34px;
+	height: 52px;
+	outline: 0
+}
+
+/* transition effects */
+
+.ease-inTransition {
+	/*Add a property and value that you like to transition. Ex: width:200px;*/
+	/* Chrome, Safari */
+	-webkit-transition-property: opacity: 100% ;
+	-webkit-transition-duration: 1s;	/*Control the transition duration*/
+	-webkit-transition-timing-function: ease-in;	/*Control the transitionfunction*/
+	-webkit-transition-delay: 0s;	/*Control the transition start delay*/
+	/* Firefox */
+	-moz-transition-property: opacity: 100% ;
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease-in;
+	-moz-transition-delay: 0s;
+	/* Standard syntax */
+	transition-property: opacity: 100% ;
+	transition-duration: 1s;
+	transition-timing-function: ease-in;
+	transition-delay: 0s;
+}
+
+/*Pick the action to trigger the animation - Ex: hover */
+.ease-inTransition:hover {
+	/*Set the final value for which you would like the property to transition to. Ex: width:500px;*/
+    opacity: 50%;
+    
+}
+
+.hover-expand{
+/*Add a property and value that you like to transition. Ex: width:200px;*/
+	/* Chrome, Safari */
+	-webkit-transition-property: transform;
+	-webkit-transition-duration: 0.25s;	/*Control the transition duration*/
+	-webkit-transition-timing-function: ease-in-out;	/*Control the transitionfunction*/
+	-webkit-transition-delay: 0s;	/*Control the transition start delay*/
+	/* Firefox */
+	-moz-transition-property: transform;
+	-moz-transition-duration: 0.25s;
+	-moz-transition-timing-function: ease-in-out;
+	-moz-transition-delay: 0s;
+	/* Standard syntax */
+	transition-property: transform;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+/*Pick the action to trigger the animation - Ex: hover */
+.hover-expand:hover {
+	/*Set the final value for which you would like the property to transition to. Ex: width:500px;*/
+    transform: scale(1.05,1.05);
+    
+}
+
+.headline-animate{
+    -webkit-animation: text-flicker-in-glow 1s 0.75s linear both;
+	        animation: text-flicker-in-glow 1s 0.75s linear both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-5-11 21:3:15
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-flicker-in-glow
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-flicker-in-glow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  10.1% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  10.2% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  }
+  20.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.5% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  85% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  85.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+}
+@keyframes text-flicker-in-glow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  10.1% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  10.2% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  20.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  }
+  20.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  30.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.5% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  30.6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  45.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    opacity: 0;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+  }
+  55.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  57.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+  }
+  60.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  65.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+  75.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  77.1% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  85% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  85.1% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  86.1% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: none;
+  }
+}
+
+
+
+.entered{
+	        -webkit-animation: slide-in-bottom 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.entered2{
+	        -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.entered3{
+	        -webkit-animation: slide-in-bottom 1.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 1.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.entered4{
+	        -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-5-11 20:50:45
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+/*@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+*/
+.slide-in-left-2 {
+	-webkit-animation: slide-in-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1.7s both;
+	        animation: slide-in-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1.7s both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-5-12 8:59:27
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-left-2 {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left-2 {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-5-11 21:16:51
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* svg animations */
+
+/***************************************************
+ * Generated by SVG Artista on 5/12/2020, 1:58:26 PM
+ * MIT license (https://opensource.org/licenses/MIT)
+ * W. https://svgartista.net
+ **************************************************/
+
+@-webkit-keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+@keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+.svg-elem-1 {
+  -webkit-animation: animate-svg-fill-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+          animation: animate-svg-fill-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+}
+
+@-webkit-keyframes animate-svg-fill-2 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+@keyframes animate-svg-fill-2 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+.svg-elem-2 {
+  -webkit-animation: animate-svg-fill-2 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s both;
+          animation: animate-svg-fill-2 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s both;
+}
+
+@-webkit-keyframes animate-svg-fill-3 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+@keyframes animate-svg-fill-3 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+.svg-elem-3 {
+  -webkit-animation: animate-svg-fill-3 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s both;
+          animation: animate-svg-fill-3 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s both;
+}
+
+@-webkit-keyframes animate-svg-fill-4 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+@keyframes animate-svg-fill-4 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+.svg-elem-4 {
+  -webkit-animation: animate-svg-fill-4 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s both;
+          animation: animate-svg-fill-4 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s both;
+}
+
+@-webkit-keyframes animate-svg-fill-5 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+@keyframes animate-svg-fill-5 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+.svg-elem-5 {
+  -webkit-animation: animate-svg-fill-5 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s both;
+          animation: animate-svg-fill-5 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s both;
+}
+
+@-webkit-keyframes animate-svg-fill-6 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+@keyframes animate-svg-fill-6 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+.svg-elem-6 {
+  -webkit-animation: animate-svg-fill-6 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s both;
+          animation: animate-svg-fill-6 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s both;
+}
+
+@-webkit-keyframes animate-svg-fill-7 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+@keyframes animate-svg-fill-7 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 137, 207);
+  }
+}
+
+.svg-elem-7 {
+  -webkit-animation: animate-svg-fill-7 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s both;
+          animation: animate-svg-fill-7 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s both;
+}
+
+.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-in-bottom2 {
+	-webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+.slide-in-bottom3 {
+	-webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+.slide-in-bottom4 {
+	-webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+	        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-6-19 21:14:9
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+    opacity: 0;
+    transition: opacity ease-out
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+          transition: opacity ease-out
+
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+    opacity: 0;
+          transition: opacity ease-out
+
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+          transition: opacity ease-out
+
+  }
+}
+
+.slide-out-bottom {
+	-webkit-animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-6-19 21:34:26
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-out-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-out-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: .6s;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+	opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+	opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+	transform: translateX(0);
+	transform: translate3d(0, 0, 0);
+}
+
+
+/* misc utility */
+
+.fpo {
+	color: #f70086!important
+}
+
+.bg-dark {
+	background-color: #2f2f2f!important
+}
+
+.bg-gray {
+	background-color: #f2f2f2!important
+}
+
+.bg-blue{
+    background-color: #0078d7!important
+}
+
+.ms-blue{color:#0078d7}
+
+.review-star-blue {
+	background-image: url(../../images/star_blue.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 1rem;
+	width: 1rem
+}
+
+.review-star-bluex4 {
+	background-image: url(../../images/star_blue.svg);
+	background-size: contain;
+	background-repeat: repeat-x;
+	height: 1rem;
+	width: 4.25rem;
+}
+
+.review-star-gray {
+	background-image: url(../../images/star_gray.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 1rem;
+	width: 1rem
+}
+
+.cta-dark::after,
+.cta::after {
+	margin-top: .1em;
+	margin-left: .5em;
+	position: absolute;
+	width: .6rem;
+	display: inline;
+	content: url(../images/chevron-47.svg);
+	vertical-align: top
+}
+
+.cta-light::after {
+	margin-top: .075em;
+	margin-left: .5em;
+	position: relative;
+	right: 0;
+	width: .6rem;
+	display: inline-block;
+	content: url(../images/chevron-KO.svg)!important;
+	vertical-align: top;
+    
+    
+    /*Add a property and value that you like to transition. Ex: width:200px;*/
+	/* Chrome, Safari */
+	-webkit-transition-property: margin-left;
+	-webkit-transition-duration: 0.25s;	/*Control the transition duration*/
+	-webkit-transition-timing-function: ease-in;	/*Control the transitionfunction*/
+	-webkit-transition-delay: 0s;	/*Control the transition start delay*/
+	/* Firefox */
+	-moz-transition-property: margin-left ;
+	-moz-transition-duration: 0.25s;
+	-moz-transition-timing-function: ease-in;
+	-moz-transition-delay: 0s;
+	/* Standard syntax */
+	transition-property: margin-left ;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in;
+	transition-delay: 0s;
+    
+}
+
+/*Pick the action to trigger the animation - Ex: hover */
+.cta-light:hover:after{
+	/*Set the final value for which you would like the property to transition to. Ex: width:500px;*/
+    margin-left: 1em
+    
+}
+
+.cta-blue::after {
+	margin-top: .075em;
+	margin-left: .5em;
+	position: relative;
+	right: 0;
+	width: .6rem;
+	display: inline-block;
+	content: url(../images/chevron-blue.svg)!important;
+	vertical-align: top;
+    
+    
+    /*Add a property and value that you like to transition. Ex: width:200px;*/
+	/* Chrome, Safari */
+	-webkit-transition-property: margin-left;
+	-webkit-transition-duration: 0.25s;	/*Control the transition duration*/
+	-webkit-transition-timing-function: ease-in;	/*Control the transitionfunction*/
+	-webkit-transition-delay: 0s;	/*Control the transition start delay*/
+	/* Firefox */
+	-moz-transition-property: margin-left ;
+	-moz-transition-duration: 0.25s;
+	-moz-transition-timing-function: ease-in;
+	-moz-transition-delay: 0s;
+	/* Standard syntax */
+	transition-property: margin-left ;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in;
+	transition-delay: 0s;
+    
+}
+
+/*Pick the action to trigger the animation - Ex: hover */
+.cta-blue:hover:after{
+	/*Set the final value for which you would like the property to transition to. Ex: width:500px;*/
+    margin-left: 1em
+    
+}
+
+.sku-selector-btn {
+	background-color: #fff;
+	border: 2px solid #2f2f2f;
+	border-radius: 0;
+	padding: 1rem;
+	min-width: 11.5rem
+}
+
+@media screen and (min-width:576px) {
+	.dropdown-menu,
+	.sku-selector-btn {
+		min-width: 15rem
+	}
+}
+
+@media screen and (min-width:992px) {
+	.dropdown-menu,
+	.sku-selector-btn {
+		min-width: 15rem
+	}
+}
+
+.dropdown-menu li {
+	margin: 1rem 0 1rem 0
+}
+
+.dropdown-menu {
+	background-color: #f2f2f2;
+	border: none;
+	border-radius: 0
+}
+
+.dropdown-arrow::after {
+	margin-top: 0;
+	margin-left: .5em;
+	position: relative;
+	right: 0;
+	width: .6rem;
+	display: inline-block;
+	content: url(../images/selectArrow.svg)!important;
+	vertical-align: top
+}
+
+
+a.btn-link, a.btn-link:hover, a.btn-link:active {
+    color:#0078D4
+}
+
+.accordion .card-body {
+    margin: 0 1rem 0 1rem
+}
+
+.subcopy {
+    font-size: 0.7rem
+}
+
+/*ESTILOS PCCENTER*/
+.ul-info {
+  list-style: none;
+}
+
+.li-info{
+  font-size: 0.6rem;
+  color: #fff;
+}
+
+.menu-a{
+  font-size: 0.6rem;
+  color: #005599;
+}
+
+p.card-text {
+  font-size: 0.8rem;
+}
+
+.letra-xs{
+  font-size: 0.6rem;
+}
+
+*{
+  scroll-behavior: smooth;
+}
